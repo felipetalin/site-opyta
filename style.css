@@ -1,0 +1,189 @@
+/* === CONFIGURAÇÕES GLOBAIS E VARIÁVEIS DE COR === */
+:root {
+    --color-yellow: #f1c40f;
+    --color-green: #8f9a5b;
+    --color-dark-green: #68723b;
+    --color-dark-gray: #333333;
+    --color-light-gray: #f4f4f4;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark-gray);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; color: var(--color-dark-gray); }
+h3 { font-size: 1.2rem; }
+p { margin-bottom: 20px; }
+
+/* === COMPONENTES REUTILIZÁVEIS === */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+.btn.dark { background-color: var(--color-dark-green); }
+.btn.yellow { background-color: var(--color-yellow); color: var(--color-dark-gray); }
+.btn:hover { opacity: 0.9; }
+
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* === CABEÇALHO (HEADER) === */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.logo img { width: 150px; }
+.menu-icon span { display: block; width: 30px; height: 3px; background-color: var(--color-dark-gray); margin: 5px 0; }
+
+/* === SEÇÃO HERO (PRINCIPAL) === */
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+    position: relative;
+}
+.hero-section::after { /* Escurece o fundo para o texto ficar legível */
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content { z-index: 5; }
+.hero-content h1 { color: var(--color-white); }
+#hero { background-image: url('imagens/bg-hero.jpg'); }
+
+/* === SEÇÕES DE CONTEÚDO === */
+.yellow-bg { background-color: var(--color-yellow); }
+.green-bg { background-color: var(--color-green); color: var(--color-white); }
+.green-bg h2, .green-bg p { color: var(--color-white); }
+.dark-green-bg { background-color: var(--color-dark-green); color: var(--color-white); }
+.dark-bg { background-color: var(--color-dark-gray); color: var(--color-white); }
+.dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* === SEÇÃO SERVIÇOS === */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.service-item {
+    text-align: center;
+}
+.service-item img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+.service-item h3 { color: var(--color-white); }
+
+/* === SEÇÃO SÓCIOS === */
+.socios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.socio-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* === SEÇÃO CASA NOVA === */
+#casa-nova {
+    background-image: url('imagens/bg-casa-nova.jpg');
+    background-attachment: fixed; /* Efeito Parallax */
+}
+#casa-nova h2 { color: var(--color-white); }
+.small-hero { height: 50vh; }
+
+
+/* === SEÇÃO CONTATO (FORMULÁRIO) === */
+form {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+form button {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* === RODAPÉ (FOOTER) === */
+.footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* === AJUSTES PARA CELULAR (RESPONSIVIDADE) === */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    .header { padding: 15px 20px; }
+    .socios-grid { grid-template-columns: 1fr; }
+}

@@ -98,7 +98,7 @@ p { margin-bottom: 20px; }
 .hero-content { z-index: 5; padding: 20px; }
 .hero-logo {
     width: 100%; /* Ocupa a largura do container */
-    max-width: 600px; /* Mas não passa de 500px para não ficar gigante */
+    max-width: 800px; /* Mas não passa de 500px para não ficar gigante */
     margin-bottom: 10px;
 }
 .hero-subtitle {
@@ -224,6 +224,7 @@ form button {
     .equipe-lista { columns: 1; }
     .hero-logo { max-width: 300px; } /* Ajusta o tamanho do logo no celular */
 }
+
 
 
 

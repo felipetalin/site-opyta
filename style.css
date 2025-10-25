@@ -47,7 +47,10 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .numero-text { font-size: 1.2rem; flex: 1; text-align: left; }
 
 /* Seção Clientes */
-#clientes h2 { color: var(--color-dark-gray); }
+#clientes h2 {
+    color: var(--color-dark-gray);
+    font-weight: 700;
+}
 .logos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 40px; align-items: center; max-width: 1000px; margin-left: auto; margin-right: auto; }
 .logo-item img { max-width: 100%; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
 .logo-item img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
@@ -89,4 +92,5 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
     .atuacao-container { flex-direction: column; gap: 40px; }
     .socios-grid { grid-template-columns: 1fr; }
 }
+
 

@@ -121,7 +121,7 @@ p { margin-bottom: 20px; }
 
 .hero-logo {
     width: 100%;
-    max-width: 600px; /* Ajuste fino do tamanho do logo */
+    max-width: 500px; /* Ajuste fino do tamanho do logo */
     margin-bottom: 0;
     transform: translateX(200px) translateY(200px); (um pouco para a esquerda e um pouco para cima) /* <<< ADICIONAMOS AQUI */
 }
@@ -257,6 +257,7 @@ form button {
 @media (max-width: 480px) {
     .equipe-lista { columns: 1; }
 }
+
 
 
 

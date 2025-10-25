@@ -10,7 +10,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { font-family: 'Poppins', sans-serif; color: var(--color-dark-gray); line-height: 1.6; }
-h2 { font-size: 2.5rem; color: var(--color-dark-gray); margin-bottom: 20px; }
+h2 { font-size: 2.5rem; color: var(--color-dark-gray); margin-bottom: 40px; }
 .content-section { padding: 80px 20px; text-align: center; }
 
 /* === CABEÇALHO === */
@@ -25,19 +25,22 @@ h2 { font-size: 2.5rem; color: var(--color-dark-gray); margin-bottom: 20px; }
 .hero-logo { width: 100%; max-width: 400px; transform: translateY(-20px); }
 .hero-subtitle { font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; color: var(--color-white); }
 #hero { background-image: url('imagens/bg-hero.jpg'); }
-.btn { display: inline-block; padding: 12px 28px; text-decoration: none; font-weight: 500; background-color: var(--color-green); color: var(--color-white); border: none; cursor: pointer; }
+.btn { display: inline-block; padding: 12px 28px; text-decoration: none; font-weight: 500; background-color: var(--color-green); color: var(--color-white); border: none; cursor: pointer; transition: transform 0.2s; }
+.btn:hover { transform: scale(1.05); }
 .btn.dark { background-color: var(--color-dark-green); }
 
 /* === SEÇÕES DE CONTEÚDO (SOBRE, NÚMEROS, CLIENTES) === */
 .yellow-bg { background-color: var(--color-yellow); }
 .green-bg { background-color: var(--color-green); color: var(--color-white); }
-.green-bg h2, .green-bg p, .green-bg .yellow-text { color: var(--color-white); }
+.green-bg h2, .green-bg .yellow-text { color: var(--color-white); }
 .green-bg .yellow-text { color: var(--color-yellow); }
 .dark-green-bg { background-color: var(--color-dark-green); color: var(--color-white); }
 .dark-bg { background-color: var(--color-dark-gray); color: var(--color-white); }
 .dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
+.section-intro { font-size: 1.1rem; max-width: 700px; margin: 0 auto 20px; }
 
 /* Seção Números */
+.yellow-text { color: var(--color-yellow); font-weight: 700; }
 .numeros-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
 .numero-item { background-color: var(--color-dark-green); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 20px; }
 .numero-icon { flex: 0 0 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
@@ -50,7 +53,7 @@ h2 { font-size: 2.5rem; color: var(--color-dark-gray); margin-bottom: 20px; }
 .logo-item img { max-width: 100%; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s ease; }
 .logo-item img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
 
-/* === NOVA SEÇÃO ATUAÇÃO (SEGMENTOS E SERVIÇOS) === */
+/* NOVA SEÇÃO ATUAÇÃO (SEGMENTOS E SERVIÇOS) */
 .atuacao-container { display: flex; max-width: 1000px; margin: 0 auto; gap: 60px; text-align: left; }
 .atuacao-column { flex: 1; }
 .atuacao-container h2 { color: var(--color-white); border-bottom: 2px solid var(--color-yellow); padding-bottom: 10px; margin-bottom: 30px; }
@@ -79,39 +82,3 @@ form button { width: 100%; font-size: 1rem; }
     .atuacao-container { flex-direction: column; }
     .socios-grid { grid-template-columns: 1fr; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -116,7 +116,7 @@ p { margin-bottom: 20px; }
 }
 .hero-column:last-child {
     text-align: left; /* Alinha o texto à esquerda da sua coluna */
-    transform: translateX(30px) translateY(30px); /* <<< ADICIONAMOS AQUI */
+    transform: translateX(30px) translateY(20px); /* <<< ADICIONAMOS AQUI */
 }
 
 .hero-logo {
@@ -257,6 +257,7 @@ form button {
 @media (max-width: 480px) {
     .equipe-lista { columns: 1; }
 }
+
 
 
 

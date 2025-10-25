@@ -108,10 +108,7 @@ p { margin-bottom: 20px; }
     margin-bottom: 30px;
     color: var(--color-white);
 }
-.hero-symbol {
-    width: 80px; /* Tamanho do símbolo */
-    margin-top: 80px; /* Aumentamos o espaço aqui */
-}
+
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 
 /* === SEÇÕES DE CONTEÚDO === */
@@ -227,3 +224,4 @@ form button {
     .equipe-lista { columns: 1; }
     .hero-logo { max-width: 300px; } /* Ajusta o tamanho do logo no celular */
 }
+

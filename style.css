@@ -132,7 +132,54 @@ p { margin-bottom: 20px; }
 }
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 
-
+/* === SEÇÃO NÚMEROS === */
+.numeros-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px; /* Espaço entre as caixas */
+    margin-top: 40px;
+    max-width: 600px; /* Largura máxima da seção */
+    margin-left: auto;
+    margin-right: auto;
+}
+.numero-item {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.numero-icon {
+    flex: 0 0 60px; /* Largura fixa para a área do ícone/círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numero-icon svg {
+    width: 40px;
+    height: 40px;
+}
+.numero-circulo {
+    background-color: var(--color-yellow);
+    color: var(--color-dark-green);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.numero-text {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.numero-text strong {
+    font-weight: 700;
+}
 /* === SEÇÕES DE CONTEÚDO === */
 .yellow-bg { background-color: var(--color-yellow); }
 .green-bg { background-color: var(--color-green); color: var(--color-white); }
@@ -255,6 +302,7 @@ form button {
         padding-right: 20px;
     }
 }
+
 
 
 

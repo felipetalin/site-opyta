@@ -150,6 +150,7 @@ p { margin-bottom: 20px; }
     display: flex;
     align-items: center;
     gap: 20px;
+    text-align: center; /* <<< LINHA ADICIONADA PARA CENTRALIZAR */
 }
 .numero-icon {
     flex: 0 0 60px; /* Largura fixa para a área do ícone/círculo */
@@ -176,6 +177,7 @@ p { margin-bottom: 20px; }
 .numero-text {
     font-size: 1.2rem;
     line-height: 1.4;
+    flex: 1; /* Garante que o texto ocupe o espaço restante */
 }
 .numero-text strong {
     font-weight: 700;
@@ -302,6 +304,7 @@ form button {
         padding-right: 20px;
     }
 }
+
 
 
 

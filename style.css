@@ -68,9 +68,14 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .linkedin-link:hover { color: var(--color-green); }
 
 /* === SEÇÃO CONTATO === */
-form { margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto; text-align: left; }
-form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #555; border-radius: 4px; font-family: 'Poppins', sans-serif; background: #555; color: white; }
-form button { width: 100%; font-size: 1rem; }
+#contato a {
+    color: var(--color-light-gray);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-yellow);
+}
+#contato a:hover {
+    color: var(--color-yellow);
+}
 
 /* === RODAPÉ === */
 .footer { background-color: #222; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; }
@@ -84,3 +89,4 @@ form button { width: 100%; font-size: 1rem; }
     .atuacao-container { flex-direction: column; gap: 40px; }
     .socios-grid { grid-template-columns: 1fr; }
 }
+

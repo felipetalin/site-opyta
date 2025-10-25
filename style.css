@@ -71,6 +71,9 @@ p { margin-bottom: 20px; }
     z-index: 10;
 }
 .logo img { width: 150px; }
+.header-logo {
+    display: none; /* Esconde o logo do topo */
+}
 .menu-icon span { display: block; width: 30px; height: 3px; background-color: var(--color-dark-gray); margin: 5px 0; }
 
 /* === SEÇÃO HERO (PRINCIPAL) === */
@@ -92,12 +95,11 @@ p { margin-bottom: 20px; }
     width: 100%; height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.hero-content { z-index: 5; }
-.hero-content h1 {
-    color: var(--color-white);
-    font-size: 8rem; /* Tamanho bem grande */
-    font-weight: 700;  /* Deixa a fonte mais "gorda", com mais peso */
-    margin-bottom: 0; /* Remove a margem de baixo */
+.hero-content { z-index: 5; padding: 20px; }
+.hero-logo {
+    width: 100%; /* Ocupa a largura do container */
+    max-width: 500px; /* Mas não passa de 500px para não ficar gigante */
+    margin-bottom: 10px;
 }
 .hero-subtitle {
     font-size: 1.5rem;
@@ -108,7 +110,7 @@ p { margin-bottom: 20px; }
 }
 .hero-symbol {
     width: 80px; /* Tamanho do símbolo */
-    margin-top: 50px; /* Espaço entre o botão e o símbolo */
+    margin-top: 80px; /* Aumentamos o espaço aqui */
 }
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 
@@ -219,9 +221,9 @@ form button {
     .header { padding: 15px 20px; }
     .socios-grid { grid-template-columns: 1fr; }
     .equipe-lista { columns: 2; }
-    .hero-content h1 { font-size: 4rem; } /* Ajusta o tamanho do OPYTA no celular */
 }
 
 @media (max-width: 480px) {
     .equipe-lista { columns: 1; }
+    .hero-logo { max-width: 300px; } /* Ajusta o tamanho do logo no celular */
 }

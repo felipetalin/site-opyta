@@ -77,19 +77,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO SEGMENTOS -->
-        <section id="segmentos" class="content-section dark-green-bg">
-            <h2>Segmentos de Atuação</h2>
-            <div class="segmentos-list">
-                <span>Mineração</span>
-                <span>Indústria</span>
-                <span>Energia</span>
-                <span>Saneamento</span>
-                <span>Agronegócio</span>
-                <span>Infraestrutura</span>
-            </div>
-        </section>
-        
+          
    <!-- SEÇÃO NÚMEROS (Substitui a antiga seção Presença) -->
     <section id="numeros" class="content-section green-bg">
         <h2><strong class="yellow-text">OPYTA</strong> EM NÚMEROS</h2>
@@ -146,32 +134,76 @@
             </div>
         </div>
     </section>
+<!-- SEÇÃO ATUAÇÃO E SERVIÇOS (UNIFICADA) -->
+        <section id="atuacao" class="content-section dark-green-bg">
+            <div class="tabs-container">
+                <!-- Botões de Navegação das Abas -->
+                <div class="tab-nav">
+                    <button class="tab-button active" onclick="openTab(event, 'Segmentos')">Segmentos de Atuação</button>
+                    <button class="tab-button" onclick="openTab(event, 'Servicos')">Nossos Serviços</button>
+                </div>
 
-        <!-- SEÇÃO SERVIÇOS -->
-        <section id="servicos" class="content-section dark-green-bg">
-            <div class="services-grid">
-                <div class="service-item">
-                    <img src="imagens/icon-consultoria.png" alt="Ícone de Consultoria">
-                    <h3>Consultoria e Serviços Técnicos</h3>
+                <!-- Conteúdo da Aba Segmentos -->
+                <div id="Segmentos" class="tab-content active">
+                    <h2>Segmentos de Atuação</h2>
+                    <div class="segmentos-list">
+                        <span>Mineração</span>
+                        <span>Indústria</span>
+                        <span>Energia</span>
+                        <span>Saneamento</span>
+                        <span>Agronegócio</span>
+                        <span>Infraestrutura</span>
+                    </div>
                 </div>
-                <div class="service-item">
-                    <img src="imagens/icon-gestao.png" alt="Ícone de Gestão de Projetos">
-                    <h3>Gestão de Projetos</h3>
-                </div>
-                <div class="service-item">
-                    <img src="imagens/icon-estrategica.png" alt="Ícone de Consultoria Estratégica">
-                    <h3>Consultoria estratégica (diligência)</h3>
-                </div>
-                <div class="service-item">
-                    <img src="imagens/icon-performance.png" alt="Ícone de Performance em Sustentabilidade">
-                    <h3>Estruture sua performance em sustentabilidade</h3>
-                </div>
-                <div class="service-item">
-                    <img src="imagens/icon-pericias.png" alt="Ícone de Perícias Ambientais">
-                    <h3>Perícias ambientais</h3>
+
+                <!-- Conteúdo da Aba Serviços -->
+                <div id="Servicos" class="tab-content">
+                    <h2>Nossos Serviços</h2>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <img src="imagens/icon-consultoria.png" alt="Ícone de Consultoria">
+                            <h3>Consultoria e Serviços Técnicos</h3>
+                        </div>
+                        <div class="service-item">
+                            <img src="imagens/icon-gestao.png" alt="Ícone de Gestão de Projetos">
+                            <h3>Gestão de Projetos</h3>
+                        </div>
+                        <div class="service-item">
+                            <img src="imagens/icon-estrategica.png" alt="Ícone de Consultoria Estratégica">
+                            <h3>Consultoria estratégica (diligência)</h3>
+                        </div>
+                        <div class="service-item">
+                            <img src="imagens/icon-performance.png" alt="Ícone de Performance em Sustentabilidade">
+                            <h3>Estruture sua performance em sustentabilidade</h3>
+                        </div>
+                        <div class="service-item">
+                            <img src="imagens/icon-pericias.png" alt="Ícone de Perícias Ambientais">
+                            <h3>Perícias ambientais</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- SCRIPT PARA AS ABAS (JavaScript) -->
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tabbuttons;
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tabbuttons = document.getElementsByClassName("tab-button");
+                for (i = 0; i < tabbuttons.length; i++) {
+                    tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            // Abre a primeira aba por padrão
+            document.getElementById("Segmentos").style.display = "block";
+        </script>
+      
 
        <!-- SEÇÃO SÓCIOS -->
         <section id="socios" class="content-section">
@@ -247,6 +279,7 @@
 
 </body>
 </html>
+
 
 
 

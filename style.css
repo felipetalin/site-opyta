@@ -57,6 +57,12 @@ p { margin-bottom: 20px; }
     max-width: 900px;
     margin: 0 auto;
 }
+.section-intro {
+    font-size: 1.1rem; /* Deixa o primeiro parágrafo um pouco maior */
+    max-width: 700px;  /* Limita a largura para melhor leitura */
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* === CABEÇALHO (HEADER) === */
 .header {
@@ -249,6 +255,7 @@ form button {
         padding-right: 20px;
     }
 }
+
 
 
 

@@ -1,227 +1,155 @@
-/* === CONFIGURAÇÕES GLOBAIS E VARIÁVEIS DE COR === */
-:root {
-    --color-yellow: #f1c40f;
-    --color-green: #8f9a5b;
-    --color-dark-green: #68723b;
-    --color-dark-gray: #333333;
-    --color-light-gray: #f4f4f4;
-    --color-white: #ffffff;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opyta - Consultoria em Sustentabilidade Corporativa</title>
+    
+    <link rel="stylesheet" href="style.css">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-html {
-    scroll-behavior: smooth;
-}
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="imagens/logo.png" alt="Logo da Opyta">
+        </a>
+        <nav class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: var(--color-dark-gray);
-    line-height: 1.6;
-}
+    <main>
 
-h1, h2, h3 {
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+        <!-- SEÇÃO HERO (PRINCIPAL) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>OPYTA</h1>
+                <p class="hero-subtitle">Crescimento sustentável para a sua empresa</p>
+                <a href="#sobre" class="btn">Saiba mais</a>
+                <img src="imagens/simbolo-y.png" alt="Símbolo Opyta" class="hero-symbol">
+            </div>
+        </section>
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; color: var(--color-dark-gray); }
-h3 { font-size: 1.2rem; }
-p { margin-bottom: 20px; }
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="content-section yellow-bg">
+            <h2>A Opyta</h2>
+            <p>A Opyta é uma empresa de consultores especialistas associados, que executa e gerencia projetos nas áreas de meio ambiente e sustentabilidade. Atuamos desde 2011 no mercado nacional, oferecendo serviços técnicos e estratégicos para empresas que possuem demandas na esfera do licenciamento ambiental ou para empresas que tenham a sustentabilidade como base da sua estratégia de gestão ou negócio.</p>
+            <a href="#presenca" class="btn dark">Veja aonde estamos presentes</a>
+        </section>
 
-/* === COMPONENTES REUTILIZÁVEIS === */
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s;
-    background-color: var(--color-green);
-    color: var(--color-white);
-    border: none;
-    cursor: pointer;
-}
-.btn.dark { background-color: var(--color-dark-green); }
-.btn.yellow { background-color: var(--color-yellow); color: var(--color-dark-gray); }
-.btn:hover { opacity: 0.9; }
+        <!-- SEÇÃO PRESENÇA -->
+        <section id="presenca" class="content-section green-bg">
+            <h2>Presença Nacional</h2>
+            <p>Iniciamos nossas atividades em Minas Gerais, mas em pouco tempo expandimos nossas fronteiras e hoje atuamos em mais de 47 municípios de 11 estados do país.</p>
+            <img src="imagens/mapa-brasil.png" alt="Mapa do Brasil com atuação da Opyta" class="map-image">
+            <a href="#servicos" class="btn yellow">Conheça nossos serviços</a>
+        </section>
 
-.content-section {
-    padding: 80px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
+        <!-- SEÇÃO SERVIÇOS -->
+        <section id="servicos" class="content-section dark-green-bg">
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="imagens/icon-consultoria.png" alt="Ícone de Consultoria">
+                    <h3>Consultoria e Serviços Técnicos</h3>
+                </div>
+                <div class="service-item">
+                    <img src="imagens/icon-gestao.png" alt="Ícone de Gestão de Projetos">
+                    <h3>Gestão de Projetos</h3>
+                </div>
+                <div class="service-item">
+                    <img src="imagens/icon-estrategica.png" alt="Ícone de Consultoria Estratégica">
+                    <h3>Consultoria estratégica (diligência)</h3>
+                </div>
+                <div class="service-item">
+                    <img src="imagens/icon-performance.png" alt="Ícone de Performance em Sustentabilidade">
+                    <h3>Estruture sua performance em sustentabilidade</h3>
+                </div>
+                <div class="service-item">
+                    <img src="imagens/icon-pericias.png" alt="Ícone de Perícias Ambientais">
+                    <h3>Perícias ambientais</h3>
+                </div>
+            </div>
+        </section>
 
-/* === CABEÇALHO (HEADER) === */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-.logo img { width: 150px; }
-.menu-icon span { display: block; width: 30px; height: 3px; background-color: var(--color-dark-gray); margin: 5px 0; }
+       <!-- SEÇÃO SÓCIOS -->
+        <section id="socios" class="content-section">
+            <h2>Sócios</h2>
+            <div class="socios-grid">
+                <div class="socio-item">
+                    <img src="imagens/felipe.jpg" alt="Foto de Felipe Talin">
+                    <h3>Felipe Talin</h3>
+                    <p>Coloque aqui a biografia resumida do Felipe.</p>
+                </div>
+                <div class="socio-item">
+                    <img src="imagens/yuri.jpg" alt="Foto de Yuri Simões">
+                    <h3>Yuri Simões</h3>
+                    <p>Coloque aqui a biografia resumida do Yuri.</p>
+                </div>
+                <div class="socio-item">
+                    <img src="imagens/ismayllen.jpg" alt="Foto de Ismayllen Masson">
+                    <h3>Ismayllen Masson</h3>
+                    <p>Coloque aqui a biografia resumida da Ismayllen.</p>
+                </div>
+                <div class="socio-item">
+                    <img src="imagens/anaclara.jpg" alt="Foto de Ana Clara">
+                    <h3>Ana Clara</h3>
+                    <p>Coloque aqui a biografia resumida da Ana Clara.</p>
+                </div>
+                <div class="socio-item">
+                    <img src="imagens/wilder.jpg" alt="Foto de Wilder Bento">
+                    <h3>Wilder Bento</h3>
+                    <p>Coloque aqui a biografia resumida do Wilder.</p>
+                </div>
+            </div>
+        </section>
 
-/* === SEÇÃO HERO (PRINCIPAL) === */
-.hero-section {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--color-white);
-    position: relative;
-}
-.hero-section::after { /* Escurece o fundo para o texto ficar legível */
-    content: '';
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-.hero-content { z-index: 5; }
-.hero-content h1 {
-    color: var(--color-white);
-    font-size: 8rem; /* Tamanho bem grande */
-    font-weight: 700;  /* Deixa a fonte mais "gorda", com mais peso */
-    margin-bottom: 0; /* Remove a margem de baixo */
-}
-.hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: var(--color-white);
-}
-.hero-symbol {
-    width: 80px; /* Tamanho do símbolo */
-    margin-top: 50px; /* Espaço entre o botão e o símbolo */
-}
-#hero { background-image: url('imagens/bg-hero.jpg'); }
+        <!-- SEÇÃO EQUIPE -->
+        <section id="equipe" class="content-section green-bg">
+            <h2>Nossa Equipe</h2>
+            <div class="equipe-lista">
+                <p>Felipe Talin</p>
+                <p>Yuri Simões</p>
+                <p>Ismayllen Masson</p>
+                <p>Ana Clara</p>
+                <p>Wilder Bento</p>
+            </div>
+        </section>
 
-/* === SEÇÕES DE CONTEÚDO === */
-.yellow-bg { background-color: var(--color-yellow); }
-.green-bg { background-color: var(--color-green); color: var(--color-white); }
-.green-bg h2, .green-bg p { color: var(--color-white); }
-.dark-green-bg { background-color: var(--color-dark-green); color: var(--color-white); }
-.dark-bg { background-color: var(--color-dark-gray); color: var(--color-white); }
-.dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
+        <!-- SEÇÃO CASA NOVA -->
+        <section id="casa-nova" class="hero-section small-hero">
+            <div class="hero-content">
+                <h2>Opyta está de casa nova</h2>
+            </div>
+        </section>
 
-.map-image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="content-section dark-bg">
+            <h2>Fala com a gente</h2>
+            <p>(31) 93551921<br>(31) 99685939</p>
+            <p>Rua Fortunato Pinto Júnior, 41<br>Santa Amélia | BH | MG | 31560180</p>
+            <form name="contato" netlify>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="tel" name="telefone" placeholder="Telefone">
+                <textarea name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn dark">Enviar</button>
+            </form>
+        </section>
 
-/* === SEÇÃO SERVIÇOS === */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-.service-item {
-    text-align: center;
-}
-.service-item img {
-    height: 80px;
-    margin-bottom: 15px;
-}
-.service-item h3 { color: var(--color-white); }
+    </main>
 
-/* === SEÇÃO SÓCIOS === */
-.socios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-.socio-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>© 2024 Opyta. Todos os direitos reservados.</p>
+    </footer>
 
-/* === SEÇÃO EQUIPE === */
-.equipe-lista {
-    columns: 3; /* Tenta dividir a lista em 3 colunas */
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    text-align: left;
-    max-width: 800px;
-    margin: 20px auto 0;
-    font-size: 1.1rem;
-}
+</body>
+</html>
 
-.equipe-lista p {
-    margin-bottom: 10px;
-    color: var(--color-white); /* Cor do texto da equipe */
-}
-
-/* === SEÇÃO CASA NOVA === */
-#casa-nova {
-    background-image: url('imagens/bg-casa-nova.jpg');
-    background-attachment: fixed; /* Efeito Parallax */
-}
-#casa-nova h2 { color: var(--color-white); }
-.small-hero { height: 50vh; }
-
-
-/* === SEÇÃO CONTATO (FORMULÁRIO) === */
-form {
-    margin-top: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Poppins', sans-serif;
-}
-form button {
-    width: 100%;
-    font-size: 1rem;
-}
-
-/* === RODAPÉ (FOOTER) === */
-.footer {
-    background-color: #222;
-    color: #aaa;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-}
-
-/* === AJUSTES PARA CELULAR (RESPONSIVIDADE) === */
-@media (max-width: 768px) {
-    h1 { font-size: 2.2rem; }
-    h2 { font-size: 1.8rem; }
-    .header { padding: 15px 20px; }
-    .socios-grid { grid-template-columns: 1fr; }
-    .equipe-lista { columns: 2; }
-    .hero-content h1 { font-size: 4rem; } /* Ajusta o tamanho do OPYTA no celular */
-}
-
-@media (max-width: 480px) {
-    .equipe-lista { columns: 1; }
-}

@@ -102,8 +102,8 @@ p { margin-bottom: 20px; }
     margin-bottom: 10px;
 }
 .hero-subtitle {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-top: 10px;
     margin-bottom: 30px;
     color: var(--color-white);
@@ -224,4 +224,5 @@ form button {
     .equipe-lista { columns: 1; }
     .hero-logo { max-width: 300px; } /* Ajusta o tamanho do logo no celular */
 }
+
 

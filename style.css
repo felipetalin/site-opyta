@@ -234,18 +234,19 @@ form button {
     .header { padding: 15px 20px; }
     .socios-grid { grid-template-columns: 1fr; }
     .equipe-lista { columns: 2; }
-
-    /* --- NOVAS REGRAS PARA A SEÇÃO PRINCIPAL NO CELULAR --- */
+    
+    /* --- CORREÇÃO DEFINITIVA PARA CELULAR --- */
     .hero-section {
-        align-items: flex-start; /* MÁGICA: Alinha todo o conteúdo no TOPO */
-        padding-top: 100px;     /* Adiciona um respiro para não colar na borda */
+        /* Garante que a seção continue ocupando a tela toda */
     }
 
     .hero-content {
-        height: auto;
-        justify-content: flex-start; 
-        gap: 20px;
-        padding: 0 20px; /* Remove padding vertical extra */
+        height: 100%; /* Garante que a caixa de conteúdo ocupe toda a altura */
+        justify-content: space-between; /* MÁGICA: Separa os itens para o topo e base */
+        padding-top: 100px;     /* Espaço no topo para o logo */
+        padding-bottom: 60px;   /* Espaço na base para o texto/botão */
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 

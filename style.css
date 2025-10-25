@@ -234,22 +234,18 @@ form button {
     .header { padding: 15px 20px; }
     .socios-grid { grid-template-columns: 1fr; }
     .equipe-lista { columns: 2; }
-    
-    .hero-content {
-        height: auto; /* IMPORTANTE: Deixa a altura ser definida pelo conteúdo */
-        justify-content: center; 
-        gap: 40px;
-        padding-top: 120px; /* Dá um bom espaço no topo */
-        padding-bottom: 80px; /* E um espaço na base */
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
 
-@media (max-width: 480px) {
-    .equipe-lista { columns: 1; }
-    .hero-logo {
-        max-width: 300px;
+    /* --- NOVAS REGRAS PARA A SEÇÃO PRINCIPAL NO CELULAR --- */
+    .hero-section {
+        align-items: flex-start; /* MÁGICA: Alinha todo o conteúdo no TOPO */
+        padding-top: 100px;     /* Adiciona um respiro para não colar na borda */
+    }
+
+    .hero-content {
+        height: auto;
+        justify-content: flex-start; 
+        gap: 20px;
+        padding: 0 20px; /* Remove padding vertical extra */
     }
 }
 

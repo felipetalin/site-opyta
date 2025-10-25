@@ -156,23 +156,6 @@ p { margin-bottom: 20px; }
     transform: scale(1.1);
 }
 
-/* === SEÇÃO SEGMENTOS === */
-.segmentos-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-.segmentos-list span {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--color-white);
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
 /* === SEÇÃO NÚMEROS === */
 .yellow-text {
     color: var(--color-yellow);
@@ -243,36 +226,6 @@ p { margin-bottom: 20px; }
     margin: 20px 0;
 }
 
-/* === SEÇÃO SERVIÇOS === */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-.service-item {
-    text-align: center;
-}
-.service-item img {
-    height: 80px;
-    margin-bottom: 15px;
-}
-.service-item h3 { color: var(--color-white); }
-
-/* === SEÇÃO SÓCIOS === */
-.socios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
-.socio-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
 
 /* === SEÇÃO EQUIPE === */
 .equipe-lista {
@@ -297,7 +250,88 @@ p { margin-bottom: 20px; }
 }
 #casa-nova h2 { color: var(--color-white); }
 .small-hero { height: 50vh; }
+/* === SEÇÃO ATUAÇÃO E SERVIÇOS (ABAS) === */
+.tabs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.tab-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.tab-button {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px; /* Alinha com a borda principal */
+}
+
+.tab-button:hover {
+    color: var(--color-white);
+}
+
+.tab-button.active {
+    color: var(--color-yellow);
+    border-bottom-color: var(--color-yellow);
+}
+
+.tab-content {
+    display: none; /* Escondido por padrão */
+    animation: fadeIn 0.5s;
+}
+.tab-content h2 {
+    color: var(--color-white);
+    margin-bottom: 40px;
+}
+.tab-content.active {
+    display: block; /* Visível quando ativo */
+}
+
+/* Reutilizando e adaptando estilos antigos */
+.segmentos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.segmentos-list span {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+.service-item {
+    text-align: center;
+}
+.service-item img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+.service-item h3 { color: var(--color-white); }
+
+
+/* Animação de Fade-in para as abas */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* === SEÇÃO CONTATO (FORMULÁRIO) === */
 form {
@@ -351,6 +385,7 @@ form button {
         padding-right: 20px;
     }
 }
+
 
 
 

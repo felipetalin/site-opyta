@@ -116,14 +116,14 @@ p { margin-bottom: 20px; }
 }
 .hero-column:last-child {
     text-align: left; /* Alinha o texto à esquerda da sua coluna */
-   transform: translateX(50px) translateY(30px); (um pouco para a direita e um pouco para baixo) /* <<< ADICIONAMOS AQUI */
+   transform: translateX(-50px) translateY(-30px); (um pouco para a direita e um pouco para baixo) /* <<< ADICIONAMOS AQUI */
 }
 
 .hero-logo {
     width: 100%;
     max-width: 450px; /* Ajuste fino do tamanho do logo */
     margin-bottom: 0;
-    transform: translateX(-40px) translateY(-30px); (um pouco para a esquerda e um pouco para cima) /* <<< ADICIONAMOS AQUI */
+    transform: translateX(40px) translateY(30px); (um pouco para a esquerda e um pouco para cima) /* <<< ADICIONAMOS AQUI */
 }
 .hero-subtitle {
     font-size: 1.8rem;
@@ -257,6 +257,7 @@ form button {
 @media (max-width: 480px) {
     .equipe-lista { columns: 1; }
 }
+
 
 
 

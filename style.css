@@ -80,7 +80,8 @@ p { margin-bottom: 20px; }
 .hero-section {
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    /* MODIFIQUE ESTA LINHA */
+    background-position: center 70%; /* Antigamente era 'center' */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,6 +225,7 @@ form button {
     .equipe-lista { columns: 1; }
     .hero-logo { max-width: 300px; } /* Ajusta o tamanho do logo no celular */
 }
+
 
 
 

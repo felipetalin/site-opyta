@@ -132,6 +132,47 @@ p { margin-bottom: 20px; }
 }
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 
+/* === SEÇÃO CLIENTES === */
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%); /* Deixa os logos em preto e branco */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+.logo-item img:hover {
+    filter: grayscale(0%); /* Deixa colorido ao passar o mouse */
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* === SEÇÃO SEGMENTOS === */
+.segmentos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+.segmentos-list span {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
 /* === SEÇÃO NÚMEROS === */
 .yellow-text {
     color: var(--color-yellow);
@@ -310,6 +351,7 @@ form button {
         padding-right: 20px;
     }
 }
+
 
 
 

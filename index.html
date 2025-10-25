@@ -28,14 +28,20 @@
     <main>
 
      <!-- SEÇÃO HERO (PRINCIPAL) -->
-<section id="hero" class="hero-section">
-    <div class="hero-content">
-        <!-- Em vez do texto H1, colocamos a imagem do logo aqui -->
-        <img src="imagens/logo.png" alt="Logo Opyta" class="hero-logo">
-        
-        <p class="hero-subtitle">Crescimento sustentável para a sua empresa</p>
-        <a href="#sobre" class="btn">Saiba mais</a>
-           </div>
+<div class="hero-content hero-columns"> <!-- Adicionamos uma classe nova -->
+            
+            <!-- Coluna da Esquerda: O Logo -->
+            <div class="hero-column">
+                <img src="imagens/logo.png" alt="Logo Opyta" class="hero-logo">
+            </div>
+
+            <!-- Coluna da Direita: Textos e Botão -->
+            <div class="hero-column">
+                <p class="hero-subtitle">Crescimento sustentável para a sua empresa</p>
+                <a href="#sobre" class="btn">Saiba mais</a>
+            </div>
+
+        </div>
 </section>
 
         <!-- SEÇÃO SOBRE -->
@@ -153,6 +159,7 @@
 
 </body>
 </html>
+
 
 
 

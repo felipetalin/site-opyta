@@ -93,7 +93,23 @@ p { margin-bottom: 20px; }
     background-color: rgba(0, 0, 0, 0.5);
 }
 .hero-content { z-index: 5; }
-.hero-content h1 { color: var(--color-white); }
+.hero-content h1 {
+    color: var(--color-white);
+    font-size: 8rem; /* Tamanho bem grande */
+    font-weight: 700;  /* Deixa a fonte mais "gorda", com mais peso */
+    margin-bottom: 0; /* Remove a margem de baixo */
+}
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: var(--color-white);
+}
+.hero-symbol {
+    width: 80px; /* Tamanho do símbolo */
+    margin-top: 50px; /* Espaço entre o botão e o símbolo */
+}
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 
 /* === SEÇÕES DE CONTEÚDO === */
@@ -141,6 +157,22 @@ p { margin-bottom: 20px; }
     margin-bottom: 20px;
 }
 
+/* === SEÇÃO EQUIPE === */
+.equipe-lista {
+    columns: 3; /* Tenta dividir a lista em 3 colunas */
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto 0;
+    font-size: 1.1rem;
+}
+
+.equipe-lista p {
+    margin-bottom: 10px;
+    color: var(--color-white); /* Cor do texto da equipe */
+}
+
 /* === SEÇÃO CASA NOVA === */
 #casa-nova {
     background-image: url('imagens/bg-casa-nova.jpg');
@@ -186,4 +218,10 @@ form button {
     h2 { font-size: 1.8rem; }
     .header { padding: 15px 20px; }
     .socios-grid { grid-template-columns: 1fr; }
+    .equipe-lista { columns: 2; }
+    .hero-content h1 { font-size: 4rem; } /* Ajusta o tamanho do OPYTA no celular */
+}
+
+@media (max-width: 480px) {
+    .equipe-lista { columns: 1; }
 }

@@ -37,10 +37,21 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
 .section-intro { display: block; font-size: 1.1rem; max-width: 750px; margin: -20px auto 40px; }
 
-/* Ajuste específico para a seção Sobre (Desktop) */
-#sobre { text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; }
-#sobre h2 { text-align: center; }
-#sobre .btn { display: block; max-width: 300px; margin: 40px auto 0; text-align: center; }
+/* Ajuste específico para a seção Sobre */
+#sobre {
+    text-align: center; /* Centraliza TUDO na seção */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sobre p {
+    font-size: 1.1rem; /* UNIFORMIZA o tamanho da fonte para todos os parágrafos */
+    margin-bottom: 25px; /* Adiciona um espaço entre os parágrafos */
+}
+#sobre strong {
+    font-weight: 700; /* Garante o negrito */
+    color: var(--color-dark-green); /* DÁ O DESTAQUE na cor verde-escura */
+}
 
 /* Seção Números */
 .yellow-text { color: var(--color-yellow); font-weight: 700; }

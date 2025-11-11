@@ -37,22 +37,10 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
 .section-intro { display: block; font-size: 1.1rem; max-width: 750px; margin: -20px auto 40px; }
 
-/* Ajuste específico para a seção Sobre */
-#sobre {
-    text-align: left; /* Alinha todo o texto à esquerda */
-    max-width: 800px; /* Limita a largura do conteúdo */
-    margin-left: auto;  /* Centraliza o bloco na página */
-    margin-right: auto; /* Centraliza o bloco na página */
-}
-#sobre h2 {
-    text-align: center; /* Mantém apenas o título centralizado */
-}
-#sobre .btn {
-    display: block; /* Faz o botão ocupar a largura */
-    max-width: 300px; /* Limita a largura do botão */
-    margin: 40px auto 0; /* Centraliza o botão */
-    text-align: center; /* Centraliza o texto do botão */
-}
+/* Ajuste específico para a seção Sobre (Desktop) */
+#sobre { text-align: left; max-width: 800px; margin-left: auto; margin-right: auto; }
+#sobre h2 { text-align: center; }
+#sobre .btn { display: block; max-width: 300px; margin: 40px auto 0; text-align: center; }
 
 /* Seção Números */
 .yellow-text { color: var(--color-yellow); font-weight: 700; }
@@ -98,8 +86,7 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
     .header { padding: 15px 20px; }
     .hero-content { justify-content: space-between; padding-top: 100px; padding-bottom: 60px; }
     .hero-logo { max-width: 320px; transform: translateY(0); }
-    #sobre { text-align: center; } /* Centraliza tudo na seção Sobre no celular */
-    #sobre p { text-align: left; } /* Mantém os parágrafos alinhados à esquerda para leitura */
+    #sobre { text-align: center; } /* <<< A CORREÇÃO ESTÁ AQUI */
     .atuacao-container { flex-direction: column; gap: 40px; }
     .socios-grid { grid-template-columns: 1fr; }
 }

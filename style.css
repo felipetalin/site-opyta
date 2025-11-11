@@ -21,7 +21,7 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .hero-section { height: 100vh; background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center; text-align: center; color: var(--color-white); position: relative; }
 .hero-section::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
 .hero-content { z-index: 5; padding: 80px 20px; width: 100%; max-width: 900px; height: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
-.hero-logo { width: 100%; max-width: 450px; transform: translateY(-20px); }
+.hero-logo { width: 100%; max-width: 450px; transform: translateY(-80px); }
 .hero-subtitle { font-size: 1.8rem; font-weight: 700; margin-bottom: 30px; color: var(--color-white); }
 #hero { background-image: url('imagens/bg-hero.jpg'); }
 .btn { display: inline-block; padding: 12px 28px; text-decoration: none; font-weight: 500; background-color: var(--color-green); color: var(--color-white); border: none; cursor: pointer; transition: transform 0.2s; border-radius: 5px;}
@@ -35,25 +35,39 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .dark-green-bg { background-color: var(--color-dark-green); }
 .dark-bg { background-color: var(--color-dark-gray); }
 .dark-bg h2, .dark-bg p { color: var(--color-light-gray); }
-.section-intro { font-size: 1.1rem; max-width: 750px; margin: -20px auto 40px; }
+.section-intro { display: block; font-size: 1.1rem; max-width: 750px; margin: -20px auto 40px; }
+
+/* Ajuste específico para a seção Sobre */
+#sobre {
+    text-align: left; /* Alinha todo o texto à esquerda */
+    max-width: 800px; /* Limita a largura do conteúdo */
+    margin-left: auto;  /* Centraliza o bloco na página */
+    margin-right: auto; /* Centraliza o bloco na página */
+}
+#sobre h2 {
+    text-align: center; /* Mantém apenas o título centralizado */
+}
+#sobre .btn {
+    display: block; /* Faz o botão ocupar a largura */
+    max-width: 300px; /* Limita a largura do botão */
+    margin: 40px auto 0; /* Centraliza o botão */
+    text-align: center; /* Centraliza o texto do botão */
+}
 
 /* Seção Números */
 .yellow-text { color: var(--color-yellow); font-weight: 700; }
 .numeros-grid { display: grid; grid-template-columns: 1fr; gap: 15px; max-width: 600px; margin-left: auto; margin-right: auto; }
-.numero-item { background-color: var(--color-dark-green); color: var(--color-white); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 20px; }
-.numero-icon { flex: 0 0 60px; height: 60px; display: flex; justify-content: center; align-items: center; }
+.numero-item { background-color: var(--color-dark-green); color: var(--color-white); border-radius: 15px; padding: 25px 20px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 15px; }
+.numero-icon { height: 60px; display: flex; justify-content: center; align-items: center; }
 .numero-icon img { width: 45px; height: auto; }
 .numero-circulo { background-color: var(--color-yellow); color: var(--color-dark-green); width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; font-weight: 700; }
-.numero-text { font-size: 1.2rem; flex: 1; text-align: left; }
+.numero-text { font-size: 1.2rem; line-height: 1.4; }
 
 /* Seção Clientes */
-#clientes h2 {
-    color: var(--color-dark-gray);
-    font-weight: 700;
-}
+#clientes h2 { color: var(--color-dark-gray); }
 .logos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 40px; align-items: center; max-width: 1000px; margin-left: auto; margin-right: auto; }
-.logo-item img { max-width: 100%; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
-.logo-item img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.1); }
+.logo-item img { max-width: 100%; height: auto; transition: transform 0.3s ease; }
+.logo-item img:hover { transform: scale(1.1); }
 
 /* SEÇÃO ATUAÇÃO (SEGMENTOS E SERVIÇOS) */
 .atuacao-container { display: flex; max-width: 1000px; margin: 0 auto; gap: 60px; text-align: left; }
@@ -67,18 +81,13 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
 .socios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
 .socio-item { padding: 20px; }
 .socio-item img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
-.linkedin-link { display: inline-block; margin-top: 15px; font-weight: 600; color: var(--color-dark-green); text-decoration: none; border-bottom: 2px solid var(--color-green); padding-bottom: 2px; }
+.socio-item h3 { margin-bottom: 15px; }
+.linkedin-link { display: inline-block; font-weight: 600; color: var(--color-dark-green); text-decoration: none; border-bottom: 2px solid var(--color-green); padding-bottom: 2px; }
 .linkedin-link:hover { color: var(--color-green); }
 
 /* === SEÇÃO CONTATO === */
-#contato a {
-    color: var(--color-light-gray);
-    text-decoration: none;
-    border-bottom: 1px solid var(--color-yellow);
-}
-#contato a:hover {
-    color: var(--color-yellow);
-}
+#contato a { color: var(--color-light-gray); text-decoration: none; border-bottom: 1px solid var(--color-yellow); }
+#contato a:hover { color: var(--color-yellow); }
 
 /* === RODAPÉ === */
 .footer { background-color: #222; color: #aaa; text-align: center; padding: 20px; font-size: 0.9rem; }
@@ -89,8 +98,8 @@ h2 { font-size: 2.5rem; margin-bottom: 40px; }
     .header { padding: 15px 20px; }
     .hero-content { justify-content: space-between; padding-top: 100px; padding-bottom: 60px; }
     .hero-logo { max-width: 320px; transform: translateY(0); }
+    #sobre { text-align: center; } /* Centraliza tudo na seção Sobre no celular */
+    #sobre p { text-align: left; } /* Mantém os parágrafos alinhados à esquerda para leitura */
     .atuacao-container { flex-direction: column; gap: 40px; }
     .socios-grid { grid-template-columns: 1fr; }
 }
-
-
